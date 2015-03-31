@@ -1,0 +1,70 @@
+
+
+
+@keyframes work-hover-animation {
+  from {
+      @include filter(grayscale(100%));
+  }
+
+  to {
+      @include filter(grayscale(0%));
+  }
+}
+
+@keyframes work-leave-animation {
+  from {
+      @include filter(grayscale(0%));
+  }
+
+  to {
+      @include filter(grayscale(100%));
+  }
+}
+
+
+.work {
+    position: relative;
+    height: calc(100% - #{$header-height});
+    height: -webkit-calc(100% - $header-height);
+    height: -moz-calc(100% - $header-height);
+    text-align: center;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    cursor: pointer;
+
+    @include filter(grayscale(100%));
+    @include animation-name(work-leave-animation);
+    @include animation-duration(0.2s);
+    @include animation-timing-function(ease);
+
+
+    &:hover {
+        @include animation-name(work-hover-animation);
+        @include animation-duration(0.2s);
+        @include animation-timing-function(ease);
+        @include filter(grayscale(0%));
+
+        .work-name {
+            display: block;
+        }
+    }
+
+    * {
+        @include vertical-align();
+    }
+
+    .work-overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: $bitten-cookie-lighter-yellow;
+        opacity: 0.6;
+    }
+
+    .work-name {
+        display: none;
+    }
+}

@@ -1,0 +1,180 @@
+$top-header-height: 50px;
+$top-header-background-color: #DEDEDE;
+$top-header-padding: 0 15px;
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.top-header {
+    //@include outer-container;
+    height:$top-header-height;
+    background-color: $top-header-background-color;
+    padding: $top-header-padding;
+
+    .branding {
+
+        @include span-columns(4);
+        h4 {
+            @include vertical-align();
+        }
+        height: $top-header-height;
+    }
+
+    .user-actions {
+        @include span-columns(8);
+        height: $top-header-height;
+
+        > * {
+            @include vertical-align();
+            float: right;
+            margin-left: 10px;
+        }
+
+        .user-picture {
+            background-image: url('/img/avatar.png');
+            background-size: $top-header-height - 10px;
+            height: $top-header-height - 10px;
+            width: $top-header-height - 10px;
+        }
+    }
+
+.dropdown {
+    @include vertical-align();
+
+    $base-border-color: gainsboro !default;
+    $base-border-radius: 3px !default;
+    $base-line-height: 1.5em !default;
+    $base-background-color: white !default;
+    $dark-gray: #333 !default;
+    $large-screen: em(860) !default;
+    $base-font-color: $dark-gray !default;
+
+    padding-top: 5px;
+    line-height: $base-line-height;
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    $dropdown-color: $base-font-color;
+    $dropdown-description-color: lighten($dropdown-color, 40%);
+    $dropdown-border: 1px solid silver;
+    $dropdown-background: $base-background-color;
+    $dropdown-background-hover: darken($dropdown-background, 3%);
+    $dropdown-inner-border: 1px solid silver;
+    $dropdown-height: 40px;
+    $dropdown-padding: 1em;
+    $dropdown-distance-from-menu: 50px;
+    $dropdown-arrow-top-distance: 0;
+
+    $dropdown-button-border-radius: 100%;
+    $dropdown-button-radius: 40px;
+
+  .dropdown-container {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+  }
+
+  .dropdown-button {
+        //@include vertical-align();
+        width: $dropdown-button-radius;
+        height: $dropdown-button-radius;
+        background: $dropdown-background;
+        border-radius: $dropdown-button-border-radius;
+        border: $dropdown-border;
+        cursor: pointer;
+        float: right;
+        font-size: 0.7em;
+        font-weight: 800;
+        line-height: $dropdown-height;
+        margin: 0;
+        position: relative;
+  }
+
+  .dropdown-button:hover {
+    background-color: $dropdown-background-hover;
+  }
+
+
+  .dropdown-menu {
+    @include transition (all 0.2s ease-in-out);
+    background: $dropdown-background;
+    border-radius: $base-border-radius;
+    border: $dropdown-border;
+    box-shadow: 0 2px 2px transparentize(black, 0.8);
+    color: $dropdown-color;
+    cursor: pointer;
+    display: none;
+    overflow: show;
+    position: absolute;
+    right: 0;
+    top: $dropdown-distance-from-menu;
+    width: 228px;
+    z-index: 99999;
+
+    &:before {
+      @include position(absolute, 0 -8.5em 0 0);
+      color: $dropdown-background;
+      content: "\25b2";
+      font-size: 1.4em;
+      pointer-events: none;
+      text-shadow: 0 -2px 2px transparentize(black, 0.7);
+      top: -0.7em;
+    }
+  }
+
+  .dropdown-menu li {
+    border-bottom: $dropdown-inner-border;
+    color: $dropdown-color;
+    padding: $dropdown-padding / 2;
+  }
+
+  .dropdown-menu li:hover {
+    background: $dropdown-background-hover;
+  }
+
+  .dropdown-menu li:first-child {
+    border-top-left-radius: $base-border-radius;
+    border-top-right-radius: $base-border-radius;
+  }
+
+  .dropdown-menu li:last-child {
+    border: none;
+    border-bottom-left-radius: $base-border-radius;
+    border-bottom-right-radius: $base-border-radius;
+  }
+
+  .show-menu {
+    display: block;
+  }
+}
+}
+
+.main-container {
+    @include outer-container();
+    background-color: #FFF;
+    max-width: 750px;
+    min-width: 250px;
+    margin-top: 25px;
+    padding: 0.75em 0 0 0.75em;
+    .message-creator {
+        @include span-columns(9);
+
+        .btn-submit-container {
+            text-align: right;
+        }
+    }
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.25);
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.25);
+}

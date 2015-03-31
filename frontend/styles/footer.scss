@@ -1,0 +1,22 @@
+$footer-height: 75px;
+
+footer {
+    //height: $footer-height;
+    //padding: 20px 10px;
+
+    * {
+        //@include vertical-align();
+    }
+
+    p {
+        margin: 0;
+        margin: 10px 50px;
+        &.social {
+            float: right;
+        }
+        &.copyright {
+            float: left;
+        }
+    }
+
+}

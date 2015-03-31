@@ -1,0 +1,59 @@
+$member-height: 100px;
+$team-background-color: #EBE559;
+
+.punchline {
+
+    .text-container {
+        @include outer-container;
+
+        .highlight-text {
+            &:hover {
+                color: $bitten-cookie-yellow;
+                
+            }
+        }
+    }
+    height: calc(100% - #{$header-height});
+    height: -webkit-calc(100% - $header-height);
+    height: -moz-calc(100% - $header-height);
+    text-align: center;
+
+    * {
+        @include vertical-align();
+    }
+
+}
+
+.team-section {
+
+    background-color: $team-background-color;
+    .team {
+        @include outer-container;
+        text-align: center;
+        :first-child {
+
+        }
+        .member {
+            background-image: url('/img/cartman.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: $member-height;
+            margin-top: 10px;
+            //@include span-columns(2);
+            //@include omega(12n);
+
+            @include span-columns(2 of 12,block-collapse);
+            width: 16.5961%;
+            //@include omega(4n);
+
+            p {
+                display: none;
+            }
+
+            &:last-child {
+                width: 16.5961%;
+            }
+        }
+    }
+}

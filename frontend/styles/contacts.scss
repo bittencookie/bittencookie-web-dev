@@ -1,0 +1,40 @@
+
+.contacts {
+    $input-border: 2px solid black;
+    $title-color: #FFF;
+
+    padding: 50px 0;
+
+    text-align: center;
+    background-color: $bitten-cookie-yellow;
+
+    .title {
+        color: $title-color;
+        font-size: 3em;
+    }
+
+    form {
+        text-align: left;
+
+        @include outer-container;
+
+        input,
+        textarea {
+            border: $input-border;
+        }
+
+        .left-input {
+            @include span-columns(6);
+        }
+
+        .right-input {
+            @include span-columns(6);
+        }
+    }
+}
+
+.where {
+    background-color: #4f4f4f;
+    color: #FFF;
+    height: 300px;
+}

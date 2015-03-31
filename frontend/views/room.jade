@@ -1,0 +1,7 @@
+section.main-container(ng-controller='RoomController')
+    h3 room {{roomName}}
+        button(ng-click='toggleCamera()') camera: {{getCameraState()}}
+        button(ng-click='toggleAudio()') audio: {{getAudioState()}}
+        br
+        div(ng-repeat='stream in streams')
+            r-stream(stream='stream')

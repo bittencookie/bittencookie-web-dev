@@ -1,0 +1,40 @@
+span(ng-controller="DashboardController")
+    header.top-header
+        div.branding
+            h4 SOS Shake
+        .user-actions
+            .user-picture
+            .dropdown
+                .dropdown-container
+                    .dropdown-button
+                        p ...
+                    ul.dropdown-menu.dropdown-select
+                      li Settings
+                      li Logout
+            .username John 'Hannibal' Smith
+    section.main-container
+        .message-creator
+            fieldset
+                form
+                    p
+                        label(for='select_element') Preset messages
+                          |         
+                        select(name='select_element')
+                            optgroup(label='Option Group 1')
+                              option(value='1') Option 1
+                              |             
+                              option(value='2') Option 2
+                              |             
+                              option(value='3') Option 3        
+                            optgroup(label='Option Group 2')
+                              option(value='1') Option 1
+                              |             
+                              option(value='2') Option 2
+                              |             
+                              option(value='3') Option 3
+                    p
+                        label(for='text_area') Message
+                        |         
+                        textarea(placeholder="Insert text")
+                    p.btn-submit-container
+                        button.btn-submit-message(type="button") Send

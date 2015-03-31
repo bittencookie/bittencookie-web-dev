@@ -1,0 +1,15 @@
+span(ng-controller="SplashController")
+    section.splash
+        a.logo
+        a.menu-button(ng-click="toggleMenu()", ng-class="{white: data.menuActive, cross: data.menuActive}")
+            span
+    section.menu(ng-class="{show: data.menuActive, hide: !data.menuActive}")
+        a.close
+        span.options
+            a(ng-href="#about")
+                h2 About
+            a(ng-href="#works")
+                h2 Works
+            h2 Client Space
+            a(ng-href="#contact")
+                h2 Contact
