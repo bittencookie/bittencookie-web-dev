@@ -1,6 +1,10 @@
 header-directive
 
-section.work(ng-repeat="(key, work) in works", style="{{work.background}}")
+section.work(
+        ng-repeat="(key, work) in works", 
+        style="{{work.background}}",
+        ng-click="goToWork(key)"
+)
     div.work-overlay
-    h1.work-name(ng-bind="work.logo")
+        h1.work-name(ng-bind="work.logo")
 footer-directive

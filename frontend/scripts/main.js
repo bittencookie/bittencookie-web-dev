@@ -40,7 +40,7 @@ angular.module('sos-shake', [
                     controller: 'ContactsController'
                 })
                 .state('work', {
-                    url: '/work',
+                    url: '/work/:work',
                     templateProvider: function ($templateCache) {
                         return $templateCache.get('work.html');
                     },

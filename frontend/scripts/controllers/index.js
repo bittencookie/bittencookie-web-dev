@@ -15,5 +15,5 @@ module.exports = angular.module('rtcRoom.controllers', [])
     .controller('SplashController', ['$scope', SplashController])
     .controller('ContactsController', ['$scope', ContactsController])
     .controller('WorkController', ['$scope', WorkController])
-    .controller('WorksController', ['$scope', WorksController])
+    .controller('WorksController', ['$scope', '$state', WorksController])
     .controller('AboutController', ['$scope', AboutController]);
