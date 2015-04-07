@@ -1,3 +1,24 @@
 header-directive
-h1 Work
+section.work-info
+    aside 
+        | Keep Up
+        br
+        | Mais info
+    article 
+        | A Diabetes Mellitus é uma doença caraterizada por um aumento anormal da glicose no sangue. Quando não é tratada adequadamente, podem ocorrer complicações perigosas para a saúde e 
+        | bem estar dos doentes.
+        br
+        | A Diabetes é uma doença bastante comum no mundo abrangendo cerca de 7,6% da população 
+        | adulta (entre 30 e 69 anos).
+        | Embora não haja ainda uma cura definitiva para a diabetes, há vários tratamentos disponíveis 
+        | que, quando seguidos de forma regular, proporcionam saúde e qualidade de vida para o 
+        | paciente portador.
+        br
+        | A KeepUp é uma aplicação para sistema operativo Android que procura dar um estilo de vida 
+        | mais saudável aos pacientes com Diabetes Mellitus.
+section.more-works
+    h1 More Works
+    .works-list
+        .work-block(ng-repeat="(key, work) in works")
+            div.work-image(style="{{work.background}}")
 footer-directive

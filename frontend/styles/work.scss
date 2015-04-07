@@ -1,0 +1,36 @@
+
+section.work-info {
+    @include outer-container;
+
+    aside {
+        @include span-columns(3);
+        @include shift(3);
+    }
+
+    article {
+        @include span-columns(6);
+    }
+}
+
+section.more-works {
+    background-color: $bitten-cookie-yellow;
+    text-align: center;
+
+    .works-list {
+        @include outer-container;
+        padding: 90px 0;
+
+        .work-block {
+            @include span-columns(3);
+            .work-image {
+                padding: 5px;
+
+                //
+                width: 200px;
+                height: 200px;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
