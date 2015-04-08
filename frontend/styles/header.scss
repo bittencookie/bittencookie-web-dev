@@ -1,5 +1,10 @@
 $header-height: 65px;
 $header-padding: 15px;
+
+.menu {
+    background: rgba(0,0,0,0.95) !important;
+}
+
 header {
     height: $header-height;
     padding: $header-padding;
@@ -103,7 +108,7 @@ header {
 }
 
 
-$menu-background-color: #000;
+$menu-background-color: rgba(0,0,0,0.95);
 $menu-text-color: #EFEFEF;
 .header-menu {
     position: absolute;
@@ -125,6 +130,8 @@ $menu-text-color: #EFEFEF;
         h2 {
             @include vertical-align();
             color: white;
+            margin-bottom: 20px;
+            font-size: 3em;
 
             &:hover {
                 color: $bitten-cookie-yellow;

@@ -34,7 +34,25 @@
 }
 
 .where {
-    background-color: #4f4f4f;
+    //background-color: #4f4f4f;
+    background: url('/img/mapgrey.png') center;
     color: #FFF;
     height: 300px;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.marker {
+    width: 60px;
+    position: absolute;
+    top: 36%;
+    left: 48%;
+    z-index: 10;
+
+    &:hover {
+        top: 35%;
+        left: 47%;
+        width: 80px;
+    }
 }
