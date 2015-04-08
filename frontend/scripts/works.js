@@ -10,8 +10,8 @@ module.exports = {
     },
     "sosshake": {
         "logo": "SOS Shake",
-        "background": "background-image:url(\"/img/macbook.jpg\")",
-        "image": "/img/macbook.jpg",
+        "background": "background-image:url(\"/img/sos_shake.jpg\")",
+        "image": "/img/sos_shake.jpg",
         "info": "<p>O projeto SOS Shake consiste num sistema de notificação que, através do toque vibratório do smartphone e notificações, avisa os utilizadores de situações de alerta, emergência ou outro tipo de avisos em locais públicos ou privados. </p>" +
                 "<p>Objetivos:</p>" +
                 "<p>- Contribuir para o aumento dos níveis de independência no dia-a-dia de pessoas com deficiência auditiva ou défice elevado de audição pois são o público mais vulnerável em situações onde os avisos sonoros são mais utilizados. </p>" +
@@ -43,8 +43,13 @@ module.exports = {
     },
     "escolaglobal": {
         "logo": "Escola Global",
-        "background": "background-image:url(\"/img/macbook.jpg\")",
-        "image": "/img/macbook.jpg",
+        "background": "background-image:url(\"/img/escola_global.png\")",
+        "image": "/img/escola_global.png",
+        "pictures": [
+            "/img/escola_global.png",
+            "/img/escola_global_ex.png",
+            "/img/escola_global_ex2.png"
+        ],
         "info": "<p>A programação estimula o pensamento lógico, a criatividade e a capacidade de resolver" +
                 "problemas, de uma forma lúdica e divertida.</p>" +
                 "<p>Nesta perspetiva, aprender a programar pode configurar uma importante ferramenta " +

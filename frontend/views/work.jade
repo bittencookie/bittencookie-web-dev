@@ -1,4 +1,8 @@
 header-directive
+//section.work-carrousel
+    .carrousel
+        div(ng-repeat="image in work.pictures")
+            img(ng-src="{{image}}")
 section.work-info
     aside 
         span(ng-bind="work.logo")

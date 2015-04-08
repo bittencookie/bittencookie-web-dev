@@ -29,9 +29,9 @@
     height: -moz-calc(100% - $header-height);
     text-align: center;
 
-    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 
     cursor: pointer;
 

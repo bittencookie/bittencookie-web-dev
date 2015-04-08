@@ -1,9 +1,17 @@
+/*global $:true */
 var works = require('../works');
 
-module.exports = function ContactsController($scope, $stateParams, $sce) {
+module.exports = function WorkController($scope, $stateParams, $sce, $timeout) {
     'use strict';
     $scope.works = works;
     $scope.work = works[$stateParams.work];
     $scope.work.info = $sce.trustAsHtml($scope.work.info);
-    console.log('work controller');
+
+    $timeout(function () {
+        $('.carrousel').slick({
+            adaptiveHeight: true,
+            autoplay: true
+        });
+    });
+
 };
