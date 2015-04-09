@@ -1,6 +1,6 @@
 $member-height: 100px;
-$team-background-color: #EBE559;
-$near-black: #333;
+$team-background-color: $bitten-cookie-yellow;
+$near-black: black;
 
 .text-container {
   @include outer-container;
@@ -14,6 +14,11 @@ $near-black: #333;
     &:hover {
       color: $bitten-cookie-yellow;
     }
+  }
+
+  h1.bigger {
+    font-size: 3.5em;
+    margin-top: 40px;
   }
 }
 
@@ -42,16 +47,24 @@ $near-black: #333;
 .team-section {
 
   background-color: $team-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   .team {
     @include outer-container;
     text-align: center;
-    :first-child {
 
+    h1 {
+      margin-bottom: 60px;
+      font-size: 3.5em;
+      color: black !important;
     }
+
     a {
       text-decoration: none;
       color: $near-black;
     }
+
     .member {
       background-image: url('/img/cartman.jpg');
       background-size: contain;
@@ -72,35 +85,6 @@ $near-black: #333;
 
       &:last-child {
         width: 16.5961%;
-      }
-
-      .caption {
-        opacity: 0;
-        padding: 2px 0;
-        background: $near-black;
-        text-align: center;
-        font-weight: bold;
-        position: relative;
-        height: 40%;
-        //height: $member-height;
-        bottom: -72%;
-        vertical-align: bottom;
-        margin-right: 22.5%;
-        margin-left: 22.5%;
-
-        .name {
-          color: #f7fa1f;
-        }
-
-        .position {
-          color: $team-background-color;
-        }
-      }
-
-      &:hover {
-        .caption {
-          opacity: 0.7;
-        }
       }
     }
   }
