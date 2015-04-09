@@ -12,7 +12,7 @@ section.work-info
 section.more-works
     h1 More Works
     .works-list
-        .work-block(ng-repeat="(key, work) in works")
+        .work-block(ng-repeat="(key, work) in works", ng-click="goToWork(key)")
             div.work-image(style="{{work.background}}")
         .work-block
             div Creating Stuff

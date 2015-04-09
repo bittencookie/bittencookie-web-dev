@@ -1,7 +1,7 @@
 /*global $:true */
 var works = require('../works');
 
-module.exports = function WorkController($scope, $stateParams, $sce, $timeout) {
+module.exports = function WorkController($scope, $stateParams, $state, $sce, $timeout) {
     'use strict';
     $scope.works = works;
     $scope.work = works[$stateParams.work];
@@ -9,9 +9,15 @@ module.exports = function WorkController($scope, $stateParams, $sce, $timeout) {
 
     $timeout(function () {
         $('.carrousel').slick({
-            adaptiveHeight: true,
-            autoplay: true
+            adaptiveHeight: false,
+            autoplay: true,
+            arrows: false
         });
     });
 
+    $scope.goToWork = function (key) {
+        $state.go('work', {
+            work: key
+        });
+    };
 };

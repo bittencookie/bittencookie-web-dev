@@ -1,5 +1,11 @@
 section.work-carrousel {
     @include outer-container;
+    max-height: 250px;
+
+    * {
+        max-height: 250px;
+        width: 100%;
+    }
 }
 
 section.work-info {
@@ -28,6 +34,8 @@ section.more-works {
 
         .work-block {
             @include span-columns(3);
+            margin-right: 1.76765%;
+            margin-top: 15px;
             div {
                 padding: 5px;
 
@@ -38,6 +46,7 @@ section.more-works {
                 background-repeat: no-repeat;
                 font-size: 2em;
                 text-align: left;
+
             }
         }
     }

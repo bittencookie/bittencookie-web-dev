@@ -2,8 +2,8 @@
 module.exports = {
     "keepup": {
         "logo": "keepup",
-        "background": "background-image:url(\"/img/macbook.jpg\")",
-        "image": "/img/macbook.jpg",
+        "background": "background-image:url(\"/img/keepup_1_1.jpg\")",
+        "image": "/img/keepup_1_1.jpg",
         "info": "A Diabetes Mellitus é uma doença caraterizada por um aumento anormal da glicose no sangue. Quando não é tratada adequadamente, podem ocorrer complicações perigosas para a saúde e bem estar dos doentes.\n" +
                 "A Diabetes é uma doença bastante comum no mundo abrangendo cerca de 7,6% da população adulta (entre 30 e 69 anos). Embora não haja ainda uma cura definitiva para a diabetes, há vários tratamentos disponíveis que, quando seguidos de forma regular, proporcionam saúde e qualidade de vida para o paciente portador." +
                 "A KeepUp é uma aplicação para sistema operativo Android que procura dar um estilo de vida mais saudável aos pacientes com Diabetes Mellitus."
@@ -21,8 +21,8 @@ module.exports = {
     },
     "glintt": {
         "logo": "Glintt",
-        "background": "background-image:url(\"/img/macbook.jpg\")",
-        "image": "/img/macbook.jpg",
+        "background": "background-image:url(\"/img/gsupport_1.png\")",
+        "image": "/img/gsupport_1.png",
         "info": "<p>Atualmente o apoio ao cliente, na área da saúde, é feito através de call-centers. Esta" +
                 "abordagem provou ser ineficaz, já que apenas uma parte reduzida dos clientes recorre a este" +
                 "serviço, acabando por se dirigir aos balcões sempre que quer comunicar com as instituições.</p>" +

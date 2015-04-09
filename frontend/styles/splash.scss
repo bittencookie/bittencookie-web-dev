@@ -124,7 +124,11 @@ $menu-text-color: #EFEFEF;
         h2 {
             @include vertical-align();
             color: white;
-
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 6em;
+            font-family: lato,sans serif;
+            letter-spacing: 5px;
             &:hover {
                 color: $bitten-cookie-yellow;
             }
