@@ -28,10 +28,10 @@
     height: -webkit-calc(100% - $header-height);
     height: -moz-calc(100% - $header-height);
     text-align: center;
-
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 45px !important;
 
     cursor: pointer;
 

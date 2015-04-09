@@ -1,7 +1,7 @@
 header-directive
 .punchline
     .text-container
-        h1
+        h1.bigger
             span.highlight-text(ng-repeat="word in introTitle",
             ng-mouseenter="$last && changeWord('bytes!', false)",
             ng-mouseleave="$last && changeWord('bits!', false)") {{word}}&nbsp;
@@ -10,16 +10,20 @@ header-directive
         p A missão da Bitten Cookie é criar produtos tecnológicos integradores para que se tornem fantásticos para os seus utilizadores. A Bitten Cookie quer trabalhar com as melhores pessoas num ambiente fantástico e produtivo para oferecer ao mundo um leque de produtos de alta qualidade a todos os níveis, estando actualmente presente em duas áreas de negócio: Educação e Saúde.
 section.team-section
     .team
-        h1 Our team
+        h1 Our Team
 
         ul.list.list-authors
             li.list_item(ng-repeat="member in team")
-                a.summary.summary-author.h-card.u-url
+                a.summary.summary-author.h-card.u-url(
+                ng-mouseenter="label = member.position",
+                ng-mouseleave="label = member.name") {{label = (label === undefined || label === '') ? member.name : label;; ""}}
                     img.summary_image.u-photo(
                     src="/img/team/{{member.image}}",
                     alt="{{member.name}}")
-                    span.summary_meta.p-name {{member.name}}
-                    span.summary_meta.p-position {{member.position}}
+                    span.summary_meta.p-name(
+                    style="letter-spacing: 0.5px; font-size: 1em;"
+                    ) {{label}}
+                    //span.summary_meta.p-position {{member.position}}
 
 .text-container
     h1

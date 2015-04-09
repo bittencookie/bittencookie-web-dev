@@ -4,7 +4,7 @@
     $title-color: #FFF;
 
     padding: 50px 0;
-
+    margin-top: 45px !important;
     text-align: center;
     background-color: $bitten-cookie-yellow;
 
@@ -34,10 +34,11 @@
 }
 
 .where {
-    background-size: cover;
+
     background: url('/img/mapgrey.png') center;
+    background-size: cover;
     color: #FFF;
-    height: 300px;
+    height: 500px;
     position: relative;
     left: 0;
     top: 0;
