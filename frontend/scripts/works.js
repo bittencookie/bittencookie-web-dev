@@ -1,7 +1,7 @@
 
 module.exports = {
     "keepup": {
-        "logo": "keepup",
+        "logo": "KeepUp",
         "background": "background-image:url(\"/img/keepup_1_1.jpg\")",
         "image": "/img/keepup_1_1.jpg",
         "info": "A Diabetes Mellitus é uma doença caraterizada por um aumento anormal da glicose no sangue. Quando não é tratada adequadamente, podem ocorrer complicações perigosas para a saúde e bem estar dos doentes.\n" +
@@ -20,7 +20,7 @@ module.exports = {
                 "<p>- Notificar o utilizador quando o smartphone detetar uma mensagem a avisar que chegou a sua vez, por exemplo quando o mesmo se encontra numa sala de espera. .</p>"
     },
     "glintt": {
-        "logo": "Glintt",
+        "logo": "Glintt Support",
         "background": "background-image:url(\"/img/gsupport_1.png\")",
         "image": "/img/gsupport_1.png",
         "info": "<p>Atualmente o apoio ao cliente, na área da saúde, é feito através de call-centers. Esta" +
@@ -42,7 +42,7 @@ module.exports = {
                 "<p>- Dar às empresas informação em tempo real do que as pessoas dizem sobre elas.</p>"
     },
     "escolaglobal": {
-        "logo": "Escola Global",
+        "logo": "coding@escolaglobal",
         "background": "background-image:url(\"/img/escola_global.png\")",
         "image": "/img/escola_global.png",
         "pictures": [
