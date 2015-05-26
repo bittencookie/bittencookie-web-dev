@@ -6,11 +6,9 @@ header-directive
 section.work-info
     aside 
         span(ng-bind="work.logo")
-        br
-        | Mais info
     article(ng-bind-html="work.info")
 section.more-works
-    h1 More Works
+    h1 Portfolio
     .works-list
         .work-block(ng-repeat="(key, work) in works", ng-click="goToWork(key)")
             div.work-image(style="{{work.background}}")

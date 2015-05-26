@@ -10,7 +10,8 @@ section.contacts
             
         span.right-input
             p Message
-            textarea
+            textarea(ng-model="data.message")
+            a(href="{{mailtoHref()}}") Enviar
 section.where
     img.marker(src="/img/cookiecolor.png")
 footer-directive
