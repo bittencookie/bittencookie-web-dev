@@ -7,7 +7,7 @@ module.exports = function ContactsController($scope, $state) {
     'use strict';
     $scope.destiny = {
         email: "contact@bittencookie.pt",
-        subject: "Site contact form"
+        subject: "Information request"
     };
 
     $scope.data = {
