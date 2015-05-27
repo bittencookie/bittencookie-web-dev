@@ -1,12 +1,18 @@
-
+﻿
 module.exports = {
     "keepup": {
         "logo": "KeepUp",
         "background": "background-image:url(\"/img/keepup_1_1.jpg\")",
         "image": "/img/keepup_1_1.jpg",
-        "info": "A Diabetes Mellitus é uma doença caraterizada por um aumento anormal da glicose no sangue. Quando não é tratada adequadamente, podem ocorrer complicações perigosas para a saúde e bem estar dos doentes.\n" +
-                "A Diabetes é uma doença bastante comum no mundo abrangendo cerca de 7,6% da população adulta (entre 30 e 69 anos). Embora não haja ainda uma cura definitiva para a diabetes, há vários tratamentos disponíveis que, quando seguidos de forma regular, proporcionam saúde e qualidade de vida para o paciente portador." +
-                "A KeepUp é uma aplicação para sistema operativo Android que procura dar um estilo de vida mais saudável aos pacientes com Diabetes Mellitus."
+        "info": "<p>A diabetes causa constrangimentos no dia a dia das pessoas afetadas por esta doença e implica um controlo rigoroso de determinados parâmetros. A KeepUp surge assim como uma aplicação para sistema operativo Android, complementada por uma plataforma web, que procura permitir a manutenção da saúde e o bem-estar de pacientes com diabetes mellitus. Com o KeepUp será possível:</p>" +
+            "<p>- Monitorizar os níveis de glicemia;</p>" +
+            "<p>- Controlar a toma de medicação;</p>" +
+            "<p>- Receber aconselhamento sobre hábitos de vida saudáveis;</p>" +
+            "<p>- Comunicar com profissionais de saúde;</p>" +
+            "<p>- Adquirir pacotes de exercícios;</p>" +
+            "<p>- Avaliar e monitorizar a condição física;</p>" +
+            "<p>- Atingir objetivos e níveis de complexidade crescente.</p>" +
+            "<p>- A melhoria da qualidade de vida para utilizadores de todas as idades é o objetivo principal da KeepUp.</p>"
     },
     "sosshake": {
         "logo": "SOS Shake",

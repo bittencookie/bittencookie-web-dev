@@ -1,4 +1,3 @@
-
 .contacts {
     $input-border: 2px solid black;
     $title-color: #FFF;
@@ -7,6 +6,13 @@
     margin-top: 45px !important;
     text-align: center;
     background-color: $bitten-cookie-yellow;
+
+    a {
+        color: black;
+        border: 2px solid black;
+        background-color: white;
+        padding: 8px 12px;
+    }
 
     .title {
         color: $title-color;
